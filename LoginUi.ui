@@ -23,7 +23,7 @@
       <height>500</height>
      </rect>
     </property>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="login_bg_left">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -45,7 +45,7 @@ border-top-left-radius:50px;
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="login_bg_leftDarken">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -67,7 +67,10 @@ border-top-left-radius:50px;
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="login_bg_right">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>270</x>
@@ -85,7 +88,7 @@ border-bottom-right-radius:50px;</string>
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="header_line">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -117,7 +120,7 @@ border-bottom-right-radius:50px;</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
+    <widget class="QLabel" name="header_text_py">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -139,7 +142,7 @@ border-bottom-right-radius:50px;</string>
       <string>PY</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="heaser_text_flora">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -164,11 +167,11 @@ border-bottom-right-radius:50px;</string>
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="signIn_text">
      <property name="geometry">
       <rect>
        <x>335</x>
-       <y>170</y>
+       <y>180</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -197,7 +200,7 @@ border-bottom-right-radius:50px;</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="username_box">
      <property name="geometry">
       <rect>
        <x>300</x>
@@ -228,7 +231,7 @@ border-bottom-right-radius:50px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="password_box">
      <property name="geometry">
       <rect>
        <x>300</x>
@@ -249,6 +252,9 @@ border-bottom-right-radius:50px;</string>
      <property name="maxLength">
       <number>30</number>
      </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
@@ -256,11 +262,11 @@ border-bottom-right-radius:50px;</string>
       <string>Password</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="login_bttn">
      <property name="geometry">
       <rect>
        <x>350</x>
-       <y>290</y>
+       <y>310</y>
        <width>75</width>
        <height>23</height>
       </rect>
@@ -271,15 +277,15 @@ border-bottom-right-radius:50px;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton#pushButton{
+      <string notr="true">QPushButton#login_bttn{
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 219), stop:1 rgba(167, 167, 255, 226));
 	color:rgba(255,255,255,210);
 	border-radius:10px;
 }
-QPushButton#pushButton:hover{
+QPushButton#login_bttn:hover{
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 255), stop:1 rgba(167, 167, 255, 255));
 }
-QPushButton#pushButton:pressed{
+QPushButton#login_bttn:pressed{
 	padding-left:5px;
 	padding-top:5px;
 	background-color:rgba(120, 120, 255, 240)
@@ -287,6 +293,244 @@ QPushButton#pushButton:pressed{
      </property>
      <property name="text">
       <string>LOGIN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="forgotPass_text">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>271</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(0,0,0,210)</string>
+     </property>
+     <property name="text">
+      <string>Forgot password?</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="rememberMe_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>271</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(0,0,0,210)</string>
+     </property>
+     <property name="text">
+      <string>Remember me</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>350</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="facebook_bttn">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Icons Social Media 8</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#facebook_bttn{
+	background-color: rgba(0,0,0,0);
+	color:rgba(100, 160, 160, 219);
+	border-radius:10px;
+}
+QPushButton#facebook_bttn:hover{
+	color: rgba(100, 160, 160, 255);
+}
+QPushButton#facebook_bttn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(120, 120, 255, 240)
+}</string>
+        </property>
+        <property name="text">
+         <string>f</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="github_bttn">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Icons Social Media 8</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#github_bttn{
+	background-color: rgba(0,0,0,0);
+	color:rgba(100, 160, 160, 219);
+	border-radius:10px;
+}
+QPushButton#github_bttn:hover{
+	color: rgba(100, 160, 160, 255);
+}
+QPushButton#github_bttn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(120, 120, 255, 240)
+}</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="google_bttn">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Icons Social Media 8</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#google_bttn{
+	background-color: rgba(0,0,0,0);
+	color:rgba(100, 160, 160, 219);
+	border-radius:10px;
+}
+QPushButton#google_bttn:hover{
+	color: rgba(100, 160, 160, 255);
+}
+QPushButton#google_bttn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(120, 120, 255, 240)
+}</string>
+        </property>
+        <property name="text">
+         <string>g</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>89</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI Light</family>
+       <pointsize>7</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(0,0,0,210)</string>
+     </property>
+     <property name="text">
+      <string>REGISTER</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="register_arrow">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>90</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#register_arrow{
+	background-color: rgba(0,0,0,0);
+	color:rgba(100, 160, 160, 219);
+	border-radius:10px;
+}
+QPushButton#register_arrow:hover{
+	color: rgba(100, 160, 160, 255);
+}
+QPushButton#register_arrow:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(120, 120, 255, 240)
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res/res.qrc">
+       <normaloff>:/icons/icons/arrow-right.svg</normaloff>:/icons/icons/arrow-right.svg</iconset>
      </property>
     </widget>
    </widget>
