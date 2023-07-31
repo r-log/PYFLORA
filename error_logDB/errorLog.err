@@ -1,0 +1,9 @@
+2023-07-31T16:23:39.508801Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2023-07-31T16:23:39.766125Z 0 [Warning] [MY-011070] [Server] '--sync-relay-log-info' is deprecated and will be removed in a future release.
+2023-07-31T16:23:39.770227Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.1\bin\mysqld.exe (mysqld 8.1.0) starting as process 3960
+2023-07-31T16:23:39.809253Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2023-07-31T16:23:41.108168Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2023-07-31T16:23:41.780975Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2023-07-31T16:23:41.783615Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2023-07-31T16:23:41.877753Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2023-07-31T16:23:41.877935Z 0 [System] [MY-010931] [Server] C:\Program Files\MySQL\MySQL Server 8.1\bin\mysqld.exe: ready for connections. Version: '8.1.0'  socket: ''  port: 3306  MySQL Community Server - GPL.
