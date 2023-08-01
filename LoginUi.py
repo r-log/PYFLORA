@@ -2,8 +2,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import sys, res
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+class UiLoginWindow(object):
+    def setup_ui(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(601, 565)
         MainWindow.setWindowFlags(QtCore.Qt.FramelessWindowHint)
