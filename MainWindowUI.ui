@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
+    <width>829</width>
     <height>423</height>
    </rect>
   </property>
@@ -14,6 +14,12 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="spacing">
      <number>0</number>
@@ -68,6 +74,11 @@
            <height>0</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/images/images/flora_bg.png);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -77,15 +88,45 @@
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item alignment="Qt::AlignHCenter|Qt::AlignTop">
            <widget class="QFrame" name="side_menu_header">
+            <property name="styleSheet">
+             <string notr="true">background: transparent;</string>
+            </property>
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::NoFrame</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
              <item>
               <widget class="QLabel" name="app_name_label">
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei UI Light</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background: transparent;</string>
+               </property>
                <property name="text">
                 <string>PY|Flora</string>
                </property>
@@ -96,15 +137,29 @@
           </item>
           <item alignment="Qt::AlignTop">
            <widget class="QFrame" name="account_info_frame">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background: transparent;</string>
+            </property>
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::NoFrame</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Plain</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_7">
              <item alignment="Qt::AlignHCenter|Qt::AlignTop">
               <widget class="QLabel" name="profile_picture_placeholder">
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius:10px;
+background: transparent;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -115,6 +170,11 @@
              </item>
              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
               <widget class="QLabel" name="sidemenu_username_placeholder">
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei UI</family>
+                </font>
+               </property>
                <property name="text">
                 <string>Username</string>
                </property>
@@ -131,6 +191,10 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="styleSheet">
+             <string notr="true">background: transparent;
+</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -140,6 +204,18 @@
             <layout class="QVBoxLayout" name="verticalLayout_6">
              <item>
               <widget class="QToolBox" name="sidemenu_toolbox">
+               <property name="font">
+                <font>
+                 <family>Microsoft JhengHei UI Light</family>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:transparent;
+border:none;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
                <property name="currentIndex">
                 <number>0</number>
                </property>
@@ -148,9 +224,12 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>158</width>
+                  <width>162</width>
                   <height>181</height>
                  </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
                 </property>
                 <attribute name="icon">
                  <iconset resource="res/res.qrc">
@@ -177,6 +256,9 @@
                  </property>
                  <item alignment="Qt::AlignTop">
                   <widget class="QFrame" name="frame_2">
+                   <property name="styleSheet">
+                    <string notr="true">background:transparent;</string>
+                   </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
                    </property>
@@ -185,7 +267,7 @@
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_9">
                     <property name="spacing">
-                     <number>0</number>
+                     <number>2</number>
                     </property>
                     <property name="leftMargin">
                      <number>0</number>
@@ -201,8 +283,26 @@
                     </property>
                     <item>
                      <widget class="QPushButton" name="sidemenu_livefeed_bttn">
+                      <property name="layoutDirection">
+                       <enum>Qt::RightToLeft</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton#sidemenu_livefeed_bttn{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 219), stop:1 rgba(167, 167, 255, 226));
+	color:rgba(255,255,255,210);
+	border-radius:10px;
+}
+QPushButton#sidemenu_livefeed_bttn:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 255), stop:1 rgba(167, 167, 255, 255));
+}
+QPushButton#sidemenu_livefeed_bttn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(120, 120, 255, 240)
+}</string>
+                      </property>
                       <property name="text">
-                       <string>LiveFeed</string>
+                       <string>Livefeed</string>
                       </property>
                       <property name="icon">
                        <iconset resource="res/res.qrc">
@@ -212,6 +312,24 @@
                     </item>
                     <item>
                      <widget class="QPushButton" name="sidemenu_plants_bttn">
+                      <property name="layoutDirection">
+                       <enum>Qt::RightToLeft</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton#sidemenu_plants_bttn{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 219), stop:1 rgba(167, 167, 255, 226));
+	color:rgba(255,255,255,210);
+	border-radius:10px;
+}
+QPushButton#sidemenu_plants_bttn:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 255), stop:1 rgba(167, 167, 255, 255));
+}
+QPushButton#sidemenu_plants_bttn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(120, 120, 255, 240)
+}</string>
+                      </property>
                       <property name="text">
                        <string>Plants</string>
                       </property>
@@ -223,6 +341,24 @@
                     </item>
                     <item>
                      <widget class="QPushButton" name="sidemenu_analytics_bttn">
+                      <property name="layoutDirection">
+                       <enum>Qt::RightToLeft</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton#sidemenu_analytics_bttn{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 219), stop:1 rgba(167, 167, 255, 226));
+	color:rgba(255,255,255,210);
+	border-radius:10px;
+}
+QPushButton#sidemenu_analytics_bttn:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(100, 160, 160, 255), stop:1 rgba(167, 167, 255, 255));
+}
+QPushButton#sidemenu_analytics_bttn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(120, 120, 255, 240)
+}</string>
+                      </property>
                       <property name="text">
                        <string>Analytics</string>
                       </property>
@@ -242,7 +378,7 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>158</width>
+                  <width>162</width>
                   <height>181</height>
                  </rect>
                 </property>
@@ -261,6 +397,9 @@
           </item>
           <item alignment="Qt::AlignBottom">
            <widget class="QFrame" name="side_menu_footer">
+            <property name="styleSheet">
+             <string notr="true">background: transparent;</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -285,6 +424,11 @@
              </property>
              <item>
               <widget class="QPushButton" name="log_out_bttn">
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei UI Light</family>
+                </font>
+               </property>
                <property name="text">
                 <string>Log-out</string>
                </property>
@@ -316,6 +460,9 @@
     </item>
     <item>
      <widget class="QFrame" name="main_body_container">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(113, 113, 113);</string>
+      </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -338,8 +485,12 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignTop">
+       <item alignment="Qt::AlignVCenter">
         <widget class="QFrame" name="header_frame">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgba(35, 93, 113, 255);
+</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -362,7 +513,7 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignLeft|Qt::AlignTop">
+          <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
            <widget class="QFrame" name="side_menu_controls">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -386,8 +537,11 @@
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
+             <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
               <widget class="QPushButton" name="minimize_menu_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -438,13 +592,21 @@
                  <height>0</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei UI Light</family>
+                </font>
+               </property>
                <property name="placeholderText">
                 <string>Search</string>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft|Qt::AlignTop">
+             <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
               <widget class="QPushButton" name="search_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -454,35 +616,11 @@
                </property>
               </widget>
              </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="notifications_frame">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="leftMargin">
-              <number>200</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>30</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item alignment="Qt::AlignRight|Qt::AlignTop">
+             <item>
               <widget class="QPushButton" name="help_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -492,10 +630,95 @@
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignRight|Qt::AlignTop">
-              <widget class="QPushButton" name="notifications_bttn">
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="notifications_frame">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>152</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>30</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignVCenter">
+              <widget class="QLabel" name="new_notification_text">
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei Light</family>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="layoutDirection">
                 <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="text">
+                <string>New notification!</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="textInteractionFlags">
+                <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="notification_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="res/res.qrc">
+                 <normaloff>:/icons/icons/chevron-right.svg</normaloff>:/icons/icons/chevron-right.svg</iconset>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+              <widget class="QPushButton" name="notifications_bttn">
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
                </property>
                <property name="text">
                 <string/>
@@ -509,7 +732,7 @@
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignRight|Qt::AlignTop">
+          <item alignment="Qt::AlignRight|Qt::AlignVCenter">
            <widget class="QFrame" name="app_controls_frame">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -533,8 +756,11 @@
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
+             <item alignment="Qt::AlignRight|Qt::AlignVCenter">
               <widget class="QPushButton" name="minimize_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -544,8 +770,11 @@
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignRight|Qt::AlignVCenter">
               <widget class="QPushButton" name="maximize_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -555,8 +784,11 @@
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignRight|Qt::AlignVCenter">
               <widget class="QPushButton" name="exit_bttn_mw">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -580,6 +812,11 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+          </font>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -590,6 +827,9 @@
        </item>
        <item alignment="Qt::AlignBottom">
         <widget class="QFrame" name="footer_frame">
+         <property name="styleSheet">
+          <string notr="true">border-top:1px solid gray;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -614,6 +854,9 @@
           </property>
           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
            <widget class="QFrame" name="info_text_frame">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -638,6 +881,16 @@
              </property>
              <item alignment="Qt::AlignVCenter">
               <widget class="QLabel" name="info_text">
+               <property name="font">
+                <font>
+                 <family>Microsoft JhengHei UI</family>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;
+color: rgb(255, 255, 255);
+color: rgb(167, 167, 167);</string>
+               </property>
                <property name="text">
                 <string>Py|Flora designed by r-log 2023© v1.0.0</string>
                </property>
@@ -648,6 +901,11 @@
           </item>
           <item>
            <widget class="QFrame" name="socials_frame">
+            <property name="styleSheet">
+             <string notr="true">border-top:none;
+border-left:1px solid gray;
+border-right:1px solid gray;</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -672,6 +930,9 @@
              </property>
              <item>
               <widget class="QPushButton" name="algebra_web_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -683,6 +944,9 @@
              </item>
              <item>
               <widget class="QPushButton" name="email_web_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -694,6 +958,10 @@
              </item>
              <item>
               <widget class="QPushButton" name="github_web_bttn">
+               <property name="styleSheet">
+                <string notr="true">border:none;
+background-color: rgb(124, 124, 124);</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -720,6 +988,9 @@
               <height>10</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -739,6 +1010,7 @@
  </widget>
  <resources>
   <include location="res/res.qrc"/>
+  <include location="../../../Users/korisnik/.designer/backup/res/res.qrc"/>
  </resources>
  <connections/>
 </ui>

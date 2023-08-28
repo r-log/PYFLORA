@@ -3,7 +3,7 @@ import sys, res
 
 
 class UiLoginWindow(object):
-    def setup_ui(self, MainWindow):
+    def setup_login_ui(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(601, 565)
         MainWindow.setWindowFlags(QtCore.Qt.FramelessWindowHint)

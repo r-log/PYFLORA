@@ -1,0 +1,27 @@
+- setove koristit za analitiku ulaza i izlaza ljudi
+- brzo radi s vrjednostima ( ako ana ivan, mark i ostali. za pronalazak jeli marko u setu ili listi, kod lite je jako sporo 
+dok je kod seta to optimizirano
+
+- tupple
+- ne promijenjiv
+- nova dimenzija
+- mozemo ga implementirati njegov adut je ne promijenjivost
+
+
+Lista
+
+-dodavanje kopiranje micanja po indexu
+
+
+
+
+
+
+-prosirivat smanjivat unija presjek razlika itd..
+
+
+for loop 
+
+range ide samo naprijed ima gornju granicu range(n)<-----
+početak nula
+

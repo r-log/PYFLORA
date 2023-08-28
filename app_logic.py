@@ -2,9 +2,17 @@ import mysql.connector
 import bcrypt
 import re
 
+from PyQt5.QtCore import QObject, pyqtSignal
 
-class AppLogic:
+import MainWindowUI
+from MainWindowUI import Ui_MainWindow
+
+
+class AppLogic(Ui_MainWindow,QObject):
+    credentials_verified = pyqtSignal(str)
+
     def __init__(self, db_config):
+        super().__init__()  # Call the superclass constructor
         self.db_config = db_config
 
     def test_connection(self):
@@ -54,20 +62,22 @@ class AppLogic:
         connection = mysql.connector.connect(**self.db_config)
         cursor = connection.cursor()
         query = 'SELECT hashed_password FROM account_info WHERE username = %s'
+        query2 = "SELECT user_id FROM account_info WHERE username = %s"
 
         try:
             cursor.execute(query, (username,))
             result = cursor.fetchone()
             if result:
                 hashed_password = result[0].encode('utf-8')
-                return bcrypt.checkpw(password.encode('utf-8'), hashed_password)
+                if bcrypt.checkpw(password.encode('utf-8'), hashed_password):
+                    self.credentials_verified.emit(username)  # Emit the signal
+                    return True
         except mysql.connector.Error as error:
             print("Error verifying credentials:", error)
         finally:
+            self.sidemenu_username_placeholder.setText(f'{username}')
             cursor.close()
             connection.close()
-
-        return False
 
     def save_user_data(self, username, password, email):
         # Save the user data to the database
@@ -82,12 +92,17 @@ class AppLogic:
             values = (username, hashed_password, email)
             cursor.execute(query, values)
             connection.commit()
+
+            user_id = cursor.lastrowid
+
+            # Update the user's ID in the database
+            update_query = "UPDATE account_info SET user_id = %s WHERE username = %s"
+            cursor.execute(update_query, (user_id, username))
+            connection.commit()
+
             print("Data saved to the database.")
         except mysql.connector.Error as error:
             print("Error saving data:", error)
         finally:
             cursor.close()
             connection.close()
-
-
-
