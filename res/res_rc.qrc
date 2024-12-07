@@ -1,0 +1,31 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>Images/Background_plant.jpg</file>
+    <file>Images/Background_plant.png</file>
+  </qresource>
+  <qresource prefix="Icons">
+    <file>Icons/plus-circle.svg</file>
+    <file>Icons/maximize-2.svg</file>
+    <file>Icons/minimize-2.svg</file>
+    <file>Icons/minus.svg</file>
+    <file>Icons/x.svg</file>
+    <file>Icons/chevron-left.svg</file>
+    <file>Icons/chevron-right.svg</file>
+    <file>Icons/eye.svg</file>
+    <file>Icons/eye-off.svg</file>
+    <file>Icons/angle-down-thin.svg</file>
+    <file>Icons/arrow-right-from-bracket-thin.svg</file>
+    <file>Icons/bell-slash-thin.svg</file>
+    <file>Icons/bell-thin.svg</file>
+    <file>Icons/chart-simple-thin.svg</file>
+    <file>Icons/circle-info-thin.svg</file>
+    <file>Icons/down-left-and-up-right-to-center-thin.svg</file>
+    <file>Icons/house-thin.svg</file>
+    <file>Icons/magnifying-glass-thin.svg</file>
+    <file>Icons/Minus.svg</file>
+    <file>Icons/Plus.svg</file>
+    <file>Icons/seedling-thin.svg</file>
+    <file>Icons/up-right-and-down-left-from-center-thin.svg</file>
+    <file>Icons/video-thin.svg</file>
+  </qresource>
+</RCC>
