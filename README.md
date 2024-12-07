@@ -6,7 +6,7 @@
 
 ###
 
-<p align="center">PyFlora is an innovative python application designed to revolutionize agricultural practices. By leveraging the power of AI, PyFlora provides intelligent insights and recommendations to optimize plant growth and yield. Application is still under development so keep in mind that some features need to be added yet!</p>
+<p align="center">PyFlora is an innovative python application designed to revolutionize agricultural practices. By leveraging the power of AI and Arduino, PyFlora provides intelligent insights and recommendations to optimize plant growth and yield. Application is still under development so keep in mind that some features need to be added yet!</p>
 
 ###
 
@@ -58,7 +58,7 @@
 
 ###
 
-<p align="center">Backend: Python<br>Frontend: QT<br>Database: SQLite<br>AI/ML: (coming soon)<br>Camera Integration: (coming soon)</p>
+<p align="center">Backend: Python<br>Frontend: QT6<br>Database: SQLite<br>AI/ML: (coming soon)<br>Camera Integration: (coming soon)</p>
 
 ###
 
