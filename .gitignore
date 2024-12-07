@@ -23,6 +23,7 @@
 # Logs and databases #
 ######################
 *.log
+__pycache__
 
 # OS generated files #
 ######################
