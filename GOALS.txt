@@ -22,6 +22,8 @@ When error occurs just manually edit the import inside the res_rc_rc.py set PyQt
 - There is an output from QT when program runs saying (Unknown property background-size) possibly cause I needed to override some things in QT
 to make front end look better and there was no other way.
 
+Bugs doesn't have effect on application stability!
+
 FIXES:
 - Added multiprocessing for plant population
 - Made the code more modular for future development
