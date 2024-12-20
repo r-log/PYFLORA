@@ -1,0 +1,36 @@
+c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\main.py:49: DeprecationWarning: sipPyTypeDict() is deprecated, the extension module should use sipPyTypeDictRef() instead
+  super().__init__(argv)
+
+Initializing database schema...
+Database path: c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\my_app.db
+Creating new connection to: c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\my_app.db
+Database schema initialized successfully
+Registering URL scheme with:
+Python path: C:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\venv\Scripts\python.exe
+App path: c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\main.py
+Script directory: c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA
+Command registered: cmd /c cd /d "c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA" && "C:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\venv\Scripts\python.exe" "c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\main.py" "%1"
+URL scheme registered successfully
+Verified command: cmd /c cd /d "c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA" && "C:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\venv\Scripts\python.exe" "c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\main.py" "%1"
+
+=== Initializing SingleApplication ===
+Removing existing server...
+Attempting to connect to existing instance: PyFloraAppServer
+
+=== Starting new instance ===
+Server listening on: PyFloraAppServer
+Database path: c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\my_app.db
+Setting main window reference: <src.controllers.auth_controller.LoginRegistrationController object at 0x0000014439EE11B0>
+Window type: <class 'src.controllers.auth_controller.LoginRegistrationController'>
+Window is visible: False
+Unknown property background-size
+Unknown property background-size
+Unknown property background-size
+Unknown property background-size
+QStackedWidget::setCurrentWidget: widget 0x1443dbbd010 not contained in stack
+QStackedWidget::setCurrentWidget: widget 0x1443dbbd010 not contained in stack
+QStackedWidget::setCurrentWidget: widget 0x1443dbbd010 not contained in stack
+Traceback (most recent call last):
+  File "c:\Users\Roko\Documents\PYTHON\PYFLORA (GIT)\PYFLORA\src\controllers\main_window_controller.py", line 124, in _handle_add_plant
+    self.user_id,
+AttributeError: 'MainWindowController' object has no attribute 'user_id'

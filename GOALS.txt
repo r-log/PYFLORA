@@ -1,0 +1,32 @@
+GOALS:
+
+CREATE REGISTER/LOGIN GUI ✅
+CREATE MAINWINDOW GUI ✅
+CREATE LOGIN/LOGOUT LOGIC ✅
+CREATE DRAG HANDLER LOGIC ✅
+CREATE PLANT MANAGEMENT ✅
+CREATE DYNAMIC MESSAGE DISPLAYER ✅
+CREATE SESSION TOKEN ✅
+
+CREATE TOKEN BASED AUTHENTICATION
+CREATE LIVEFEED LOGIC
+CREATE ANALYTICS LOGIC
+CREATE AI INTEGRATION LOGIC
+CREATE PROFILE MENAGER
+
+
+
+BUGS:
+- First time starting the script you may get error from res_rc_rc.py for some reason the QT standalone app saved my .qrc for PySide6 and I was using PyQt6 at the time.
+When error occurs just manually edit the import inside the res_rc_rc.py set PyQt6 instead of PySide6 save the file and the program should run.
+- There is an output from QT when program runs saying (Unknown property background-size) possibly cause I needed to override some things in QT
+to make front end look better and there was no other way.
+
+Bugs doesn't have effect on application stability!
+
+FIXES:
+- Added multiprocessing for plant population
+- Made the code more modular for future development
+- Cleaned a lot of stuff that wasn't useful in repository (I am a noob with git lol)
+
+
